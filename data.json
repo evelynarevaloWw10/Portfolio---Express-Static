@@ -1,0 +1,55 @@
+{"Project": [
+
+{
+"id": "0",
+"project_name": "Random Quote Generator",
+"description": " selects new quote each time page is refreashed",
+"technologies": "{'JavaScript','HTML','CSS'}",
+"live_link": "https://evelynarevaloww10.github.io/Random-Quote-Generator-/",
+"github_link": "https://github.com/evelynarevaloWw10/Random-Quote-Generator-",
+"images_urls": "/static/images/u1-1.html.png"
+},
+
+{
+"id": "1",
+"project_name": "Data-Pagination",
+"description": "functionality added to page to return 9 users on page",
+"technologies": "{'JavaScript','HTML','CSS'}",
+"live_link": "https://evelynarevaloww10.github.io/Data-Pagination/",
+"github_link": "https://github.com/evelynarevaloWw10/Data-Pagination",
+"images_urls": "/static/images/Data-pagination.html.pgn"
+},
+
+{
+"id": "2",
+"project_name": "Interative Form",
+"description": "Form interactivity, highlights if form is not completed correctly",
+"technologies": "{'JavaScript','HTML','CSS'}",
+"live_link": "https://evelynarevaloww10.github.io/Interactive-form/",
+"github_link": "https://github.com/evelynarevaloWw10/Interactive-form",
+"images_urls": "/static/images/Unit-3/unit-3-2.html.png"
+},
+
+{
+"id": "3",
+"project_name": "Phrase Hunter",
+"description": "Correctly guess the phrase",
+"technologies": "{'JavaScript','HTML','CSS'}",
+"live_link": "https://evelynarevaloww10.github.io/Phrase-Hunter-game-/",
+"github_link": "https://github.com/evelynarevaloWw10/Phrase-Hunter-game-",
+"images_urls": "/static/images/Phrase-hunter.png"
+},
+
+
+{
+"id": "4",
+"project_name": "Public-API-Request",
+"description": "fetches data from API to populate webpage and modal",
+"technologies": "{'JavaScript','HTML','CSS','API'}",
+"live_link": "https://evelynarevaloww10.github.io/Public-API-requests/",
+"github_link": "https://github.com/evelynarevaloWw10/Public-API-requests",
+ "images_urls": "/static/images/Unit-5.html.png"
+}
+
+    ]
+}
