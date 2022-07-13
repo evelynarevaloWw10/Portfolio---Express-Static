@@ -1,4 +1,4 @@
-{"Project": [
+{"projects": [
 
 {
 "id": "0",
@@ -7,7 +7,7 @@
 "technologies": "{'JavaScript','HTML','CSS'}",
 "live_link": "https://evelynarevaloww10.github.io/Random-Quote-Generator-/",
 "github_link": "https://github.com/evelynarevaloWw10/Random-Quote-Generator-",
-"images_urls": "/static/images/u1-1.html.png"
+"images_urls": "/static/images/u1-2.png"
 },
 
 {
@@ -17,7 +17,7 @@
 "technologies": "{'JavaScript','HTML','CSS'}",
 "live_link": "https://evelynarevaloww10.github.io/Data-Pagination/",
 "github_link": "https://github.com/evelynarevaloWw10/Data-Pagination",
-"images_urls": "/static/images/Data-pagination.html.pgn"
+"images_urls": "/static/images/u2-1html.png"
 },
 
 {
@@ -27,7 +27,7 @@
 "technologies": "{'JavaScript','HTML','CSS'}",
 "live_link": "https://evelynarevaloww10.github.io/Interactive-form/",
 "github_link": "https://github.com/evelynarevaloWw10/Interactive-form",
-"images_urls": "/static/images/Unit-3/unit-3-2.html.png"
+"images_urls": "/static/images/u3-2.html.png"
 },
 
 {
@@ -37,7 +37,7 @@
 "technologies": "{'JavaScript','HTML','CSS'}",
 "live_link": "https://evelynarevaloww10.github.io/Phrase-Hunter-game-/",
 "github_link": "https://github.com/evelynarevaloWw10/Phrase-Hunter-game-",
-"images_urls": "/static/images/Phrase-hunter.png"
+"images_urls": "/static/images/u4-2png"
 },
 
 
@@ -48,7 +48,7 @@
 "technologies": "{'JavaScript','HTML','CSS','API'}",
 "live_link": "https://evelynarevaloww10.github.io/Public-API-requests/",
 "github_link": "https://github.com/evelynarevaloWw10/Public-API-requests",
- "images_urls": "/static/images/Unit-5.html.png"
+ "images_urls": "/static/images/u5-1.html.png"
 }
 
     ]
