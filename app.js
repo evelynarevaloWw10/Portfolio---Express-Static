@@ -56,10 +56,10 @@ app.use((err,req,res,next) => {
         console.log('Global error handler called',err)
     }
    if(err.status === 404){
-     res.status(404).render(error,{error:err});
+    // res.status(404).render(err,{error:err});
    }else{
     err.message = err.message || "Oops! It looks like something went wrong with the server"
-    res.status(err.status || 500).render('error',{err});
+   res.status(err.status || 500).render('error',{err});
 
    }
    
