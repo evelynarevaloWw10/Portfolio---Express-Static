@@ -1,18 +1,19 @@
 
-//Import express and set up express.router
+//Import express dependencies and set up express.router
 
 const express = require('express');
 const app = express();
 const dataJson = require('./data.json')
+const data = dataJson.projects; 
 
-// Middleware
-app.set('view engine', 'pug');
+// Middleware 
+app.set('view engine','pug');
 app.use('/static',express.static('public'));
 
-//get home page, displays data on index template
+//groutes to home page, displays data on index template
 
-app.get('/', (req, res)=>{
- res.render('index',{data:dataJson.projects})
+app.get('/', (req, res) => {
+ res.render('index',{data})
 });
 
 //get access to /about page 
@@ -20,38 +21,40 @@ app.get('/about',(req, res)=>{
     res.render('about')
  });
 
-
- app.get('/projects/:id',(req,respond) =>{
+//Dynamic project routes renders the pug project template
+ app.get('/projects/:id',(req,res,next) =>{
     const projectId = req.params.id;
     const project = dataJson[projectId]
 
     if(project){
         res.render('project',{project});
-    }else{
-    next(); 
+    } else {
+       next(); 
     }
-});
+ });
 
+ 
  // sets HTTP status to 404
-
- app.use((req,res,next) => {
-    const err = new Error('Sorry page does not exist');
+app.use((req,res,next) => {
+    const err = new Error('page not found');
     err.status = 404;
     next(err);
  });
 
-
 app.use((err,req,res,next) => {
-    if(err){
+    
         console.log('Global error handler called',err)
-     if(err.status === 404){
-         res.status(404).render(err,{error:err});
-    } else {
+     
+    if(err.status === 404){
+         res.status(404).render('error',{error:err});
+   
+   
      err.message = err.message || "Oops! It looks like something went wrong with the server"
      res.status(err.status || 500).render('error',{err});
           }
-        }
-   })
+        
+
+    })
 
 //port
 app.listen(3000,() =>{
