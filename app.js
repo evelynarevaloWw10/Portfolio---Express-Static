@@ -34,7 +34,7 @@ app.get('/about',(req, res)=>{
  });
 
  
- // sets HTTP status to 404
+ // sets HTTP status to 404 and global error handler
 app.use((req,res,next) => {
     const err = new Error('page not found');
     err.status = 404;

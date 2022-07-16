@@ -1,0 +1,1 @@
+Portfolio displaying previous projects, included dynamic photos, live liinks and urls through template literals and looping through data.json object. Utalizing pug templates.
