@@ -23,8 +23,8 @@ app.get('/about',(req, res)=>{
 
 //Dynamic project routes renders the pug project template
  app.get('/projects/:id',(req,res,next) =>{
-    const projectId = req.params.id;
-    const project = dataJson[projectId]
+    const projectId = +req.params.id;
+    const project = data[projectId]
 
     if(project){
         res.render('project',{project});
@@ -46,14 +46,12 @@ app.use((err,req,res,next) => {
         console.log('Global error handler called',err)
      
     if(err.status === 404){
-         res.status(404).render('error',{error:err});
+         res.status(404).render('error',{err});
    
-   
+    } else {
      err.message = err.message || "Oops! It looks like something went wrong with the server"
      res.status(err.status || 500).render('error',{err});
           }
-        
-
     })
 
 //port
